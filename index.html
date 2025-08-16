@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>KI-Monster Philipp</title>
+  <link rel="stylesheet" href="style_vista.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 KI-Monster Philipp</h1>
+    <div class="chat-box">
+      <div id="messages"></div>
+      <input id="userInput" placeholder="Deine Frage..." />
+      <button onclick="sendMessage()">Senden</button>
+    </div>
+    <div class="tools">
+      <label><input type="checkbox" id="enable3d" /> 3D aktivieren</label>
+      <label><input type="checkbox" id="enableGPT" checked /> GPT nutzen</label>
+    </div>
+    <svg id="tree"></svg>
+    <div id="threejs"></div>
+  </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
